@@ -1,0 +1,35 @@
+h1,h3 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  margin: 10px 0;
+}
+h1{
+font-size: 35px;
+}
+body {
+  margin: 20px;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin: 10px 0 0 10px;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 4px;
+}
+nav a:visited, a:link {
+  color: #607D8B;
+}
+nav a:hover {
+  color: #039be5;
+  background-color: #CFD8DC;
+  text-decoration: none;
+}
+nav a.active {
+  color: #039be5;
+}
+.section{
+  padding-top:20px; 
+}
+'D:/Project/towerSoft/angular/lets-try-angular-2-typescript/node_modules/lite-server/node_modules/browser-sync/node_modules/fs-extra/node_modules/rimraf/node_modules/glob/node_modules/minimatch/node_modules/brace-expansion/node_modules/balanced-match/.npmignore'
