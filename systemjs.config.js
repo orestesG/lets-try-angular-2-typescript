@@ -1,4 +1,5 @@
 /**
+ *  Uses SystemJS to load application and library modules.
  * System configuration for Angular 2 samples
  * Adjust as necessary for your application needs.
  */
