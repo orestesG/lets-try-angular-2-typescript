@@ -9,16 +9,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var category_services_1 = require('./category.services');
 var WhatWeDo = (function () {
-    function WhatWeDo() {
-        this.title = "what we do section";
+    function WhatWeDo(categoryService) {
+        this.categoryService = categoryService;
+        this.title = "What we do section";
     }
+    WhatWeDo.prototype.getCategories = function () {
+        var _this = this;
+        this.categoryService.getCategoties().then(function (cat) { return _this.categories = cat; });
+    };
+    WhatWeDo.prototype.ngOnInit = function () {
+        this.getCategories();
+    };
     WhatWeDo = __decorate([
         core_1.Component({
             selector: 'what-we-do',
-            templateUrl: '../templates/WhatWeDoComponent.html'
+            templateUrl: '../templates/WhatWeDoComponent.html',
+            providers: [category_services_1.CategoryServices]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [category_services_1.CategoryServices])
     ], WhatWeDo);
     return WhatWeDo;
 }());
