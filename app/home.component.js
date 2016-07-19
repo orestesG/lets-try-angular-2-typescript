@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var feedback_details_component_1 = require('./feedback.details.component');
 var Home = (function () {
     function Home() {
         this.title = "Home section";
@@ -16,7 +17,8 @@ var Home = (function () {
     Home = __decorate([
         core_1.Component({
             selector: 'home',
-            templateUrl: '../templates/HomeComponent.html'
+            templateUrl: '../templates/HomeComponent.html',
+            directives: [feedback_details_component_1.FeedbackDetails]
         }), 
         __metadata('design:paramtypes', [])
     ], Home);
