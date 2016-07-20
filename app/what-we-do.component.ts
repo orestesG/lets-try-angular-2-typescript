@@ -15,7 +15,7 @@ export class WhatWeDo implements OnInit {
 
     }
     getCategories() {
-        this.categoryService.getCategoties().then(cat => this.categories = cat);
+        this.categoryService.getCategories().then(cat => this.categories = cat);
     }
     ngOnInit() {
         this.getCategories();

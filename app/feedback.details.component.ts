@@ -8,12 +8,12 @@ import { FeedbackServices } from './feedback.services'
     providers: [FeedbackServices]
 })
 export class FeedbackDetails implements OnInit {
-    feedbacks: Feedback[];
+    feedback: Feedback[];
     error: any;
     constructor(private feedbackServices: FeedbackServices) { }
 
     getFeedback() {
-        this.feedbackServices.getFeedbacks().then(feedbck => this.feedbacks = feedbck)
+        this.feedbackServices.getFeedback().then(feedbck => this.feedback = feedbck)
             .catch(error => this.error = error);
     }
     ngOnInit() {

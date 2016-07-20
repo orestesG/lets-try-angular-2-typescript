@@ -4,7 +4,7 @@ import { CATEGORIES } from './mock-categories';
 
 @Injectable()
 export class CategoryServices {
-    getCategoties() {
+    getCategories() {
         return Promise.resolve(CATEGORIES);
     }
 }

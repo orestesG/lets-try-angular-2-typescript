@@ -9,7 +9,7 @@ export class FeedbackServices {
     private feedbackUrl = 'app/feedback'; // URL to web api
     constructor(private http: Http) { }
 
-    getFeedbacks() {
+    getFeedback() {
         return this.http.get(this.feedbackUrl).
             toPromise().then(response => response.json().data as Feedback[]).catch(this.handleError)
 
