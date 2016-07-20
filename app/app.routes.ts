@@ -1,8 +1,8 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 
-import { Home } from './home.component';
-import { WhatWeDo } from './what-we-do.component';
-import { ContactUs } from './contact-us.component';
+import { Home } from './home/home.component';
+import { ContactUs } from './contact-us/contact-us.component';
+import { WhatWeDo } from './what-we-do/what-we-do.component';
 
 const routes: RouterConfig = [
     { path: 'home', component: Home },
