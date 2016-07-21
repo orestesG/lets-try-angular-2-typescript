@@ -26,7 +26,8 @@ var FeedbackDetails = (function () {
     FeedbackDetails = __decorate([
         core_1.Component({
             selector: 'fd-view',
-            templateUrl: 'app/shared/feedback/feedback-details.component.html',
+            moduleId: module.id,
+            templateUrl: 'feedback-details.component.html',
             providers: [feedback_services_1.FeedbackServices]
         }), 
         __metadata('design:paramtypes', [feedback_services_1.FeedbackServices])

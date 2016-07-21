@@ -5,7 +5,8 @@ import { FeedbackServices } from './feedback.services'
 
 @Component({
     selector: 'fd-view',
-    templateUrl: 'app/shared/feedback/feedback-details.component.html',
+    moduleId: module.id,
+    templateUrl: 'feedback-details.component.html',
     providers: [FeedbackServices]
 })
 export class FeedbackDetails implements OnInit {

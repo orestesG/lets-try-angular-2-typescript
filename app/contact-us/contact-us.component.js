@@ -17,7 +17,8 @@ var ContactUs = (function () {
     ContactUs = __decorate([
         core_1.Component({
             selector: 'cu-view',
-            templateUrl: 'app/contact-us/contact-us.component.html'
+            moduleId: module.id,
+            templateUrl: 'contact-us.component.html'
         }), 
         __metadata('design:paramtypes', [])
     ], ContactUs);
