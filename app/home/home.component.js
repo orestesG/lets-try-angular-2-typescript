@@ -18,7 +18,7 @@ var Home = (function () {
     Home = __decorate([
         core_1.Component({
             selector: 'home-view',
-            templateUrl: './home.component.html',
+            templateUrl: 'app/home/home.component.html',
             directives: [feedback_details_component_1.FeedbackDetails]
         }), 
         __metadata('design:paramtypes', [])

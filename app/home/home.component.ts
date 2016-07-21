@@ -4,7 +4,7 @@ import { FeedbackDetails } from './../shared/feedback/feedback-details.component
 
 @Component({
     selector: 'home-view',
-    templateUrl: './home.component.html',
+    templateUrl: 'app/home/home.component.html',
     directives: [FeedbackDetails]
 })
 export class Home {

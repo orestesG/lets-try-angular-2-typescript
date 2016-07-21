@@ -5,7 +5,7 @@ import { CategoryServices } from './shared/category.services';
 
 @Component({
     selector: 'wwd-view',
-    templateUrl: './what-we-do.component.html',
+    templateUrl: 'app/what-we-do/what-we-do.component.html',
     providers: [CategoryServices]
 })
 export class WhatWeDo implements OnInit {

@@ -26,7 +26,7 @@ var WhatWeDo = (function () {
     WhatWeDo = __decorate([
         core_1.Component({
             selector: 'wwd-view',
-            templateUrl: './what-we-do.component.html',
+            templateUrl: 'app/what-we-do/what-we-do.component.html',
             providers: [category_services_1.CategoryServices]
         }), 
         __metadata('design:paramtypes', [category_services_1.CategoryServices])

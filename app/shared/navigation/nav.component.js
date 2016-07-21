@@ -17,7 +17,7 @@ var LetsTryNav = (function () {
     LetsTryNav = __decorate([
         core_1.Component({
             selector: 'lt-nav',
-            templateUrl: './nav.component.html',
+            templateUrl: 'app/shared/navigation/nav.component.html',
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])

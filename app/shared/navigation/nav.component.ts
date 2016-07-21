@@ -3,7 +3,7 @@ import { ROUTER_DIRECTIVES} from '@angular/router';
 
 @Component({
     selector: 'lt-nav',
-    templateUrl: './nav.component.html',
+    templateUrl: 'app/shared/navigation/nav.component.html',
     directives: [ROUTER_DIRECTIVES]
     
 })
