@@ -8,7 +8,7 @@ import { LetsTryNav } from './shared/navigation/nav.component';
     selector: 'my-app',
     moduleId: module.id,
     templateUrl: 'app.component.html',
-    styleUrls: ['styles.css'],
+    styleUrls: ['../css/styles.css'],
     directives: [ROUTER_DIRECTIVES, LetsTryNav]
 })
 export class AppComponent {
