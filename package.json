@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "Try Angular 2 package.json, no testing support",
   "scripts": {
+    "prestart": "npm run build-css",
     "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings"
+    "typings": "typings",
+    "build-css": "node-sass --include-path scss app/styles.scss app/styles.css"
   },
   "license": "ISC",
   "dependencies": {
@@ -34,6 +36,7 @@
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
-    "typings":"^1.0.4"
+    "typings":"^1.0.4",
+    "node-sass": "^3.8.0"
   }
 }
