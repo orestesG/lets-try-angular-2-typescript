@@ -8,7 +8,9 @@
     "postinstall": "typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "typings": "typings"
+    "typings": "typings",
+    "test": "tsc && concurrently \"npm run tsc:w\" \"npm run lite-server-test\" ",
+    "lite-server-test": "lite-server --config=liteserver-test-config.json"
   },
   "license": "ISC",
   "dependencies": {
@@ -19,7 +21,7 @@
     "@angular/http": "2.0.0-rc.4",
     "@angular/platform-browser": "2.0.0-rc.4",
     "@angular/platform-browser-dynamic": "2.0.0-rc.4",
-    "@angular/router":  "3.0.0-beta.2",
+    "@angular/router": "3.0.0-beta.2",
     "@angular/router-deprecated": "2.0.0-rc.2",
     "@angular/upgrade": "2.0.0-rc.4",
     "systemjs": "0.19.27",
@@ -32,8 +34,9 @@
   },
   "devDependencies": {
     "concurrently": "^2.2.0",
+    "jasmine-core": "^2.4.1",
     "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
-    "typings":"^1.0.4"
+    "typings": "^1.0.4"
   }
 }

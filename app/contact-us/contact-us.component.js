@@ -10,6 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var capitalize_first_pipe_1 = require('../pipe/capitalize-first.pipe');
 var ContactUs = (function () {
     function ContactUs() {
         this.title = "Contact us section";
@@ -18,7 +19,8 @@ var ContactUs = (function () {
         core_1.Component({
             selector: 'cu-view',
             moduleId: module.id,
-            templateUrl: 'contact-us.component.html'
+            templateUrl: 'contact-us.component.html',
+            pipes: [capitalize_first_pipe_1.CapitalizeFirstPipe]
         }), 
         __metadata('design:paramtypes', [])
     ], ContactUs);
