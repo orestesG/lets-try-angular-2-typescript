@@ -39,7 +39,13 @@ We've captured many of the most useful commands in npm scripts defined in the pa
 ## Testing
 
 ### Unit tests
-
+#### Jasmine
 We write our tests with the Jasmine test framework, in order to run its enter the following command.
 
 `npm test`
+#### Karma
+We use Karma framework for run our test code in a real browser ( at the moment it has been configured in Chrome only ), enter the following command.
+
+`npm run test:karma`
+
+The `htmlReporter` is also wired in. That produces a prettier output; look for it in `~_test-output/tests.html`.

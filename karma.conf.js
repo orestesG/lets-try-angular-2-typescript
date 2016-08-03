@@ -74,7 +74,7 @@ module.exports = function(config) {
       outputFile: '_test-output/tests.html',
 
       // Optional
-      pageTitle: 'Unit Tests',
+      pageTitle: 'Unit Tests Report',
       subPageTitle: __dirname
     },
 
