@@ -13,7 +13,7 @@ var core_1 = require('@angular/core');
 var capitalize_first_pipe_1 = require('../pipe/capitalize-first.pipe');
 var ContactUs = (function () {
     function ContactUs() {
-        this.title = "Contact us section";
+        this.title = "contact us section";
     }
     ContactUs = __decorate([
         core_1.Component({
