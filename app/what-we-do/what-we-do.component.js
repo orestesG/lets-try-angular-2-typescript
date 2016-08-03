@@ -11,10 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var category_services_1 = require('./shared/category.services');
+var capitalize_first_pipe_1 = require('../pipe/capitalize-first.pipe');
 var WhatWeDo = (function () {
     function WhatWeDo(categoryService) {
         this.categoryService = categoryService;
-        this.title = "What we do section";
+        this.title = "what we do section";
     }
     WhatWeDo.prototype.getCategories = function () {
         var _this = this;
@@ -27,7 +28,8 @@ var WhatWeDo = (function () {
         core_1.Component({
             selector: 'wwd-view',
             templateUrl: 'app/what-we-do/what-we-do.component.html',
-            providers: [category_services_1.CategoryServices]
+            providers: [category_services_1.CategoryServices],
+            pipes: [capitalize_first_pipe_1.CapitalizeFirstPipe]
         }), 
         __metadata('design:paramtypes', [category_services_1.CategoryServices])
     ], WhatWeDo);

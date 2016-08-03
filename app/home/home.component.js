@@ -10,17 +10,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var capitalize_first_pipe_1 = require('../pipe/capitalize-first.pipe');
 var feedback_details_component_1 = require('./../shared/feedback/feedback-details.component');
 var Home = (function () {
     function Home() {
-        this.title = "Home section";
+        this.title = "home section";
     }
     Home = __decorate([
         core_1.Component({
             selector: 'home-view',
             moduleId: module.id,
             templateUrl: 'home.component.html',
-            directives: [feedback_details_component_1.FeedbackDetails]
+            directives: [feedback_details_component_1.FeedbackDetails],
+            pipes: [capitalize_first_pipe_1.CapitalizeFirstPipe]
         }), 
         __metadata('design:paramtypes', [])
     ], Home);
