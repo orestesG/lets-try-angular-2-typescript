@@ -48,4 +48,24 @@ We use Karma framework for run our test code in a real browser ( at the moment i
 
 `npm run test:karma`
 
-The `htmlReporter` is also wired in. That produces a prettier output; look for it in `~_test-output/tests.html`.
+The `htmlReporter` is also wired in. That produces a prettier output; look for it in `~_test-output/tests.html`; this file is excluded from source control.
+
+#### End-To-End (E2E)
+BEFORE RUNNING THE FIRST TEST you must update the Selenium webdriver. Run `npm run webdriver:update` first time only.
+Thereafter, run them with `npm run e2e`.
+That command first compiles, then simultaneously starts the Http-Server at localhost:8080 and launches protractor.
+A custom reporter (see `protractor.config.js`) generates a `_test-output/protractor-results.txt` which is easier to read; this file is excluded from source control.
+> You can add the ability to test in multiple browsers, enabling `multiCapabilities` in `protractor.config.js`
+> ```
+> exports.config = {
+>  ...
+>   multiCapabilities: [
+>	{
+>	  'browserName' : 'chrome'
+>	},
+> 	{
+> 	  'browserName' : 'firefox'
+> 	}
+>   ],
+> ...
+>``` 
