@@ -71,7 +71,7 @@ module.exports = function(config) {
     // HtmlReporter configuration
     htmlReporter: {
       // Open this file to see results in browser
-      outputFile: '_test-output/tests.html',
+      outputFile: '_test-output/karma-results.html',
 
       // Optional
       pageTitle: 'Unit Tests Report',
