@@ -10,7 +10,7 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "test": "tsc && concurrently \"npm run tsc:w\" \"npm run lite-server-test\" ",
-    "build-css": "node-sass --include-path scss app/styles.scss app/styles.css"
+    "build-css": "node-sass --include-path scss app/style.scss app/style.css",
     "test:karma": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
     "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
     "lite-server-test": "lite-server --config=liteserver-test-config.json",
