@@ -13,7 +13,7 @@ var category_services_1 = require('./shared/category.services');
 var WhatWeDo = (function () {
     function WhatWeDo(categoryService) {
         this.categoryService = categoryService;
-        this.title = "what we do section";
+        this.title = "What we do section";
     }
     WhatWeDo.prototype.getCategories = function () {
         var _this = this;
