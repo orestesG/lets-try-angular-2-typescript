@@ -1,3 +1,4 @@
+"use strict";
 exports.CATEGORIES = [
     { id: 11, name: 'Agency Life' },
     { id: 12, name: 'Client Work' },

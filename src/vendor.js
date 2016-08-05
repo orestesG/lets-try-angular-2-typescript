@@ -1,3 +1,4 @@
+"use strict";
 // Angular 2
 require('@angular/platform-browser');
 require('@angular/platform-browser-dynamic');
